@@ -23,7 +23,8 @@ public class C04_PozitifTest {
                                        ConfigReader.getProperty("blueRentalPassword"),Keys.ENTER);
 
         //Giriş yapıldığını doğrulayınız
-        Assert.assertTrue(blueRentalPages.verify.getText().contains("Jack"));
+        ReusableMethods.bekle(3);
+        Assert.assertTrue(blueRentalPages.loginVerify.getText().contains("Jack"));
 
 
         //Admin email: jack@gmail.com
