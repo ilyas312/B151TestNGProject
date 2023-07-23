@@ -16,7 +16,7 @@ public class C01_NegatifTest {
     //Customer password: fakepass
     //Error:
     //User with email fake@bluerentalcars.com not found
-    @Test
+    @Test(groups="smoke")
     public void test01() {
         //https://www.bluerentalcars.com/ adresine gidelim negatif senaryo ile login olamadığımızı test edelim
         Driver.getDriver().get(ConfigReader.getProperty("blueRentalUrl"));

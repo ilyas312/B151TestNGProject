@@ -9,7 +9,7 @@ import techproed.utilities.Driver;
 import techproed.utilities.ReusableMethods;
 
 public class C04_PozitifTest {
-    @Test
+    @Test(groups="smoke")
     public void test01() {
 
         //Acceptance Criteria:
@@ -26,6 +26,7 @@ public class C04_PozitifTest {
         ReusableMethods.bekle(3);
         Assert.assertTrue(blueRentalPages.loginVerify.getText().contains("Jack"));
 
+        Driver.closeDriver();
 
         //Admin email: jack@gmail.com
         //Admin password: 12345
